@@ -52,7 +52,7 @@ Migrated Windows Server 2008 systems to Windows Server 2022 ensuring compatibili
 - National Certificate: IT System Support (NQF Level 5)  
 - Currently pursuing: AZ-104 Microsoft Azure Administrator  
 - Planned: SC-100 Microsoft Cybersecurity Architect
-- Planned 
+- Planned  MS-102 Microsoft 365 Administrator
 
 ---
 
@@ -68,5 +68,7 @@ Migrated Windows Server 2008 systems to Windows Server 2022 ensuring compatibili
 ---
 
 ## 📫 Contact
-- LinkedIn: https://www.linkedin.com/in/your-profile
-- Location: South Africa
+- LinkedIn  : https://www.linkedin.com/in/your-profile
+- Location  : South Africa
+- Cellphone : 084 786 9004
+- Email     : Sheikwin10@gmail.com | Sheikwin10@outlook.com
