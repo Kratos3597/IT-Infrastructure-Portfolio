@@ -1,1 +1,178 @@
+# Microsoft 365 Migration Case Study  
+## POP3 to Exchange Online Migration (Multi-Company Environment)
 
+---
+
+## 🧑‍💻 Project Overview
+
+This project involved the migration of legacy POP3 email infrastructure hosted on Xneelo for two business units within the same group:
+
+- Xcelerate Outsourcing  
+- Jesmondene  
+
+The environment was modernized by migrating to **Microsoft 365 Exchange Online** to improve security, reliability, scalability, and centralized identity management.
+
+This was a **multi-domain POP3-to-cloud migration** involving manual data extraction, DNS engineering, and Microsoft 365 tenant onboarding.
+
+---
+
+## 🎯 Business Objectives
+
+- Migrate POP3 email systems to Microsoft 365 Exchange Online  
+- Consolidate two business units into a unified cloud platform  
+- Improve email security and anti-phishing protection  
+- Introduce centralized identity management via Entra ID  
+- Enable Microsoft Teams and SharePoint collaboration  
+- Eliminate dependency on legacy hosting infrastructure  
+- Improve scalability for business growth  
+
+---
+
+## 🏗️ Legacy Environment (Xneelo POP3)
+
+### Email Infrastructure
+- POP3 email accounts hosted on Xneelo cPanel
+- No centralized mailbox storage (PST-based email)
+- No identity or directory services
+- Device-specific email configuration per user
+- Limited security and spam filtering capabilities
+
+### Key Limitations
+- No mailbox governance or retention policies  
+- No MFA or modern authentication  
+- Heavy reliance on Outlook local profiles  
+- No centralized backup strategy  
+- Fragmented identity across two companies  
+
+---
+
+## ☁️ Target Microsoft 365 Architecture
+
+### Core Services Implemented
+- Microsoft Exchange Online  
+- Microsoft Entra ID (Azure Active Directory)  
+- Microsoft Teams  
+- SharePoint Online  
+- OneDrive for Business  
+
+### Security Enhancements
+- Multi-Factor Authentication (MFA)  
+- Conditional Access Policies  
+- Exchange Online Protection (EOP)  
+- Anti-phishing / Anti-spam policies  
+- DKIM, SPF, and DMARC configuration  
+
+---
+
+## 🔧 Migration Strategy
+
+### 1. Environment Assessment
+- Audited POP3 mailboxes across both companies  
+- Identified PST-based email storage usage  
+- Manually mapped users (no directory sync available)  
+- Reviewed DNS records in Xneelo  
+
+---
+
+### 2. Microsoft 365 Tenant Setup
+- Created Microsoft 365 tenant  
+- Added and verified both domains  
+- Configured Exchange Online mail flow  
+- Created users and security groups in Entra ID  
+
+---
+
+### 3. DNS Cutover & Mail Flow
+- Migrated MX records to Microsoft 365 (EOP)  
+- Configured SPF records for domain protection  
+- Enabled DKIM signing  
+- Implemented DMARC policy for reporting and enforcement  
+
+---
+
+### 4. POP3 Data Migration (Manual Method)
+
+Due to POP3 limitations, migration was executed manually:
+
+- Exported mailbox data via Outlook PST files  
+- Cleaned and validated PST structures per user  
+- Imported PSTs into Exchange Online mailboxes  
+- Verified folder structure and email integrity  
+
+---
+
+### 5. Client Reconfiguration
+- Reconfigured Outlook from POP3 to Exchange Online  
+- Migrated mobile devices to Exchange ActiveSync  
+- Disabled legacy POP3 authentication  
+- Standardized SMTP authentication via Microsoft 365  
+
+---
+
+## 🔐 Security Improvements
+
+- Eliminated insecure POP3 authentication  
+- Enabled MFA across all users  
+- Implemented Conditional Access policies  
+- Strengthened email security posture  
+- Removed legacy hosting exposure  
+
+---
+
+## 📡 DNS & Identity Engineering
+
+- Managed DNS cutover and propagation timing  
+- Executed staged migration to avoid downtime  
+- Configured:
+  - SPF (Sender Policy Framework)  
+  - DKIM (DomainKeys Identified Mail)  
+  - DMARC (Email authentication & reporting)  
+
+---
+
+## ⚠️ Challenges & Constraints
+
+### 1. Legacy POP3 System
+No native migration path — required full manual PST handling.
+
+### 2. No Central Identity
+No Active Directory or synchronization required manual user mapping.
+
+### 3. DNS Propagation Delays
+Cutover timing depended on external DNS propagation windows.
+
+### 4. End-User Dependency
+Users relied on POP3 Outlook profiles requiring full reconfiguration.
+
+### 5. Data Integrity Risks
+Manual PST migration required validation to prevent duplication or corruption.
+
+---
+
+## 📈 Business Impact
+
+- Removed dependency on legacy email infrastructure  
+- Improved email reliability and uptime  
+- Strengthened cybersecurity posture  
+- Enabled modern collaboration tools (Teams & SharePoint)  
+- Reduced IT support overhead  
+- Improved scalability for future growth  
+
+---
+
+## 🧠 Skills Demonstrated
+
+- Microsoft 365 Administration  
+- Exchange Online Configuration  
+- Entra ID Identity Management  
+- DNS Engineering (MX, SPF, DKIM, DMARC)  
+- Cloud Migration Strategy  
+- Endpoint & Outlook Migration  
+- Security Hardening (MFA, Conditional Access)  
+- Tenant Setup & Governance  
+
+---
+
+## 🚀 Outcome
+
+Successfully migrated two legacy POP3 email environments into a unified Microsoft 365 cloud infrastructure, improving security, reliability, and operational efficiency across both business units.
