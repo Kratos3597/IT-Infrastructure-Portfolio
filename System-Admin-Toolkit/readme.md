@@ -7,7 +7,7 @@ A collection of production-grade, parameterized PowerShell automation scripts de
 | Script Name | Target Environment | Core Functionality | Primary Modules Used |
 | :--- | :--- | :--- | :--- |
 | `Optimize-ADInfrastructure.ps1` | Hybrid / On-Premises AD | Automates stale account remediation, checks disk space thresholds, and flags failed critical services. | `ActiveDirectory`, `CimCmdlets` |
-| `Audit-M365Security.ps1` | Microsoft 365 Cloud | Audits tenant security postures, identifying accounts lacking MFA and detecting hidden inbox forwarding rules. | `Microsoft.Graph` |
+| `Microsoft 365 Cloud Security Script.ps1` | Microsoft 365 Cloud | Audits tenant security postures, identifying accounts lacking MFA and detecting hidden inbox forwarding rules. | `Microsoft.Graph` |
 
 ## Design Philosophy & Safety Guardrails
 * **Zero Hardcoded Credentials:** All scripts utilize secure runtime authentication or interactive OAuth2 device logins.
