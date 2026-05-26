@@ -1,1 +1,193 @@
+# 📧 COGTA KZN Email Infrastructure Migration Case Study  
+## GroupWise / POP3 → On-Premises Microsoft Exchange Server Migration
 
+![Project Type](https://img.shields.io/badge/Project-Email%20Migration-blue)
+![Users](https://img.shields.io/badge/Scale-2000%20Users-orange)
+![Environment](https://img.shields.io/badge/Environment-On--Prem%20Exchange-red)
+![Scope](https://img.shields.io/badge/Scope-Mail%20Only-critical)
+
+---
+
+## 🧑‍💻 Overview
+
+This project involved the migration of a **legacy email system for approximately 2000 users** within the KwaZulu-Natal government (COGTA KZN), transitioning from:
+
+- Novell GroupWise  
+- POP3-based email clients  
+
+➡ to  
+- Microsoft Exchange Server (On-Premises)
+
+This was a **large-scale enterprise email migration only** (no SharePoint, Teams, OneDrive, or Active Directory changes).
+
+The objective was to modernize messaging infrastructure, centralize mail services, and improve reliability and administrative control in a constrained government ICT environment.
+
+---
+
+## 🎯 Objectives
+
+- Migrate ±2000 users to Microsoft Exchange Server  
+- Eliminate GroupWise and POP3 dependencies  
+- Standardize Outlook-based email access  
+- Improve email reliability and uptime  
+- Centralize email hosting and management  
+- Reduce legacy system complexity  
+- Improve IT support efficiency  
+
+---
+
+## 🏗️ Legacy Environment Challenges
+
+- Novell GroupWise email system  
+- POP3-based mail retrieval  
+- No centralized mailbox governance  
+- Client-side email storage (PST/local files)  
+- High administrative overhead  
+- Inconsistent mail delivery experience  
+
+### ⚠️ Government Infrastructure Constraints
+- No strict control over minimum hardware specifications  
+- Large number of client machines operating below recommended Exchange/Outlook requirements  
+- Performance limitations on older desktops and laptops  
+- Infrastructure inconsistencies across departments  
+
+---
+
+## 🚗 Field Deployment & Travel Requirements
+
+This was not a centralized data center migration only — it required **extensive onsite deployment across multiple government facilities**.
+
+Teams were required to travel and perform migrations at:
+
+- Natalia Building (PMB)  
+- Wadley House (PMB)  
+- Mayville (Durban)  
+- Stanger offices  
+
+Each site required:
+- Manual mailbox migration validation  
+- Onsite Outlook reconfiguration  
+- User support and troubleshooting  
+- Hardware and performance checks on legacy systems  
+
+This added significant logistical complexity and coordination effort across regions.
+
+---
+
+## 🧱 Target Architecture
+
+- Microsoft Exchange Server (On-Premises)  
+- Outlook (MAPI) email client standardization  
+- SMTP-based mail routing  
+- DNS configuration (MX, A, Autodiscover)  
+- Centralized mailbox storage on Exchange  
+
+---
+
+## 🔧 Migration Approach
+
+### 1. Environment Assessment
+- Audited ~2000 mailboxes  
+- Identified POP3 configurations  
+- Analysed mailbox sizes and user distribution  
+- Planned phased migration batches across regions and sites  
+
+---
+
+### 2. Exchange Deployment
+- Installed Microsoft Exchange Server  
+- Configured mailbox databases  
+- Defined mail routing policies  
+- Set up SMTP services  
+
+---
+
+### 3. Mailbox Migration
+- Extracted data from GroupWise environment  
+- Converted legacy mailbox formats  
+- Migrated users in controlled phased batches  
+- Validated data integrity post-migration  
+
+---
+
+### 4. End-User Transition
+- Reconfigured Outlook profiles to Exchange  
+- Removed GroupWise client dependency  
+- Standardized email access across organization  
+- Provided onsite and remote user support during cutover  
+
+---
+
+## 🔐 Security Improvements
+
+- Removal of POP3 authentication methods  
+- Centralized email control via Exchange  
+- Improved mailbox governance  
+- Reduced endpoint email exposure  
+- Standardized authentication and access control  
+
+---
+
+## 📡 Mail Flow & DNS
+
+- Internal SMTP routing configured  
+- MX records updated for mail delivery  
+- Autodiscover configured for Outlook deployment  
+- Optimized internal vs external mail flow  
+
+---
+
+## ⚠️ Key Challenges
+
+- Migration of ~2000 users in phased rollout  
+- Legacy GroupWise data extraction complexity  
+- POP3 client reconfiguration across departments  
+- Significant travel between government sites  
+- Performance issues due to underpowered client hardware  
+- High user resistance and training requirements  
+- Strict validation required to prevent data loss  
+
+---
+
+## 📈 Business Impact
+
+- Unified enterprise email platform  
+- Improved reliability and uptime  
+- Centralized mailbox management  
+- Reduced legacy infrastructure dependency  
+- Improved IT operational efficiency  
+- Faster support resolution times  
+- Standardized communication across government departments  
+
+---
+
+## 🧠 Technical Skills Demonstrated
+
+- Microsoft Exchange Server Administration  
+- Large-scale email migration strategy  
+- GroupWise → Exchange data transition  
+- SMTP / DNS / Mail flow configuration  
+- Enterprise messaging infrastructure  
+- Batch migration planning & execution  
+- End-user Outlook deployment  
+- Onsite field support across multiple regions  
+- Legacy system decommissioning  
+
+---
+
+## 🚀 Outcome
+
+Successfully migrated approximately **2000 users** from a fragmented GroupWise and POP3 email environment to a centralized **Microsoft Exchange Server infrastructure**, improving stability, performance, and administrative control across a government-scale environment despite significant infrastructure and logistical constraints.
+
+---
+
+## 📌 Notes
+
+- Email system migration only  
+- No Active Directory restructuring  
+- No Microsoft 365 services involved  
+- No SharePoint / Teams / OneDrive migration  
+- Multi-site rollout across KZN government offices  
+- Hardware limitations impacted rollout strategy  
+
+---
