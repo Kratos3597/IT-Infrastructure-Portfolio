@@ -1,0 +1,42 @@
+1. Problem Statement
+
+School IT had no structured Active Directory. User accounts were created manually and inconsistently.
+
+2. Environment
+Windows Server 2016/2019
+Active Directory Domain Services
+1 Domain Controller
+~60users (teachers & admin)
+
+3. Implementation Process
+Install AD DS role on Windows Server
+Promote server to Domain Controller
+Create OU structure:
+Teachers
+Admin
+Create bulk users using PowerShell:
+New-ADUser
+Apply Group Policies:
+Password policy
+Account lockout rules
+Join PCs to domain
+
+4. Pros
+Centralized user management
+Faster onboarding
+Standardised security policies
+
+5. Cons
+Single domain controller risk (no redundancy)
+Manual scripting still required for bulk users
+Limited automation
+
+6. Cost Considerations
+Windows Server license required
+Hardware server cost
+Low cost overall (small environment)
+
+7. Security Considerations
+Weak passwords initially a risk
+No MFA in basic setup
+Limited auditing
