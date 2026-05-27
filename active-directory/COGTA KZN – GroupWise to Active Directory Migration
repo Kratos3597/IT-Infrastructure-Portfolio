@@ -1,0 +1,28 @@
+Problem
+Legacy GroupWise email system and outdated POP3 infrastructure and users still on a workgroup.
+
+Process
+Audit 2000+ users
+Extract mailbox data
+Deploy AD DS infrastructure
+Bulk user creation:
+PowerShell scripts
+
+ProfWiz migration tool
+Join machines to domain
+Configure Exchange server
+Migrate mailboxes
+
+Pros
+Modern identity system
+Centralized email + AD
+
+Cons
+Hardware limitations in field offices
+Migration downtime risk
+Profile corruption risk
+
+Costs :
+Servers
+Licensing (Exchange + Windows Server)
+Travel to sites 
