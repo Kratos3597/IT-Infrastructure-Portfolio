@@ -1,0 +1,24 @@
+1. Problem
+Students had full control over lab PCs.
+
+2. Process
+Create GPO in AD
+
+3. Link to “Lab Computers OU”
+
+4. Configure:
+Disable Control Panel
+Block CMD/PowerShell
+Disable USB storage
+Apply gpupdate /force
+
+5. Pros
+Prevents misuse
+Stable lab environment
+
+6. Cons
+Over-restriction affects learning
+Troubleshooting harder for IT staff
+
+7. Cost
+Free (built into Windows Server)
