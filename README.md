@@ -15,6 +15,7 @@ Windows Server infrastructure (2008–2022 lifecycle management)
 Azure infrastructure administration (AZ-104 level competency)
 Network engineering, routing, switching, and WAN optimisation
 Backup, disaster recovery, and business continuity planning
+
 🛠️ Technical Competencies
 
 Microsoft Ecosystem & Identity
@@ -51,12 +52,14 @@ Backup and disaster recovery using Veeam and related tooling
 Virtualisation
 
 Hyper-V and VMware infrastructure support and administration
+
 📊 Enterprise Impact Summary
 Delivered infrastructure support and transformation across environments supporting approximately 2000+ end users across multiple sites
 Executed large-scale migrations spanning legacy on-premise systems to modern Microsoft and Google cloud environments
 Reduced operational risk through structured migration planning, phased deployments, and system standardisation
 Improved infrastructure reliability and service continuity across government and enterprise environments with constrained legacy systems
 Implemented automation and bulk administration processes to improve efficiency in user and endpoint management at scale
+
 📂 Selected Project Experience
 📧 Microsoft 365 Migration & Modernisation
 
@@ -68,6 +71,7 @@ Improved system uptime, reliability, and email security posture
 Centralised identity and access management through Microsoft 365 integration
 Reduced dependency on legacy on-premise mail infrastructure
 Enabled improved collaboration and mobility across business units
+
 ☁️ Google Workspace Administration & Email Modernisation
 
 Supported and administered Google Workspace environments, including user management, email configuration, and security enforcement across organisational domains.
@@ -78,6 +82,7 @@ Managed Gmail and Google Workspace services for enterprise users
 Supported domain configuration, email routing, and administrative policy enforcement
 Improved security posture through MFA and access control policies
 Assisted in hybrid email environments and cross-platform collaboration scenarios
+
 🏢 Active Directory Architecture, Hybrid Identity & Modernisation
 
 Designed and supported enterprise Active Directory environments, including OU restructuring, Group Policy standardisation, and full identity lifecycle management across on-premise and cloud-integrated environments.
@@ -92,6 +97,7 @@ Improved consistency of security policy enforcement across endpoints through Gro
 Supported large-scale workstation and user migrations using automated tooling (e.g., ProfWiz)
 Enabled modern authentication workflows including cloud-based identity alignment and conditional access readiness in hybrid environments
 Enhanced operational efficiency in user provisioning, deprovisioning, and lifecycle management
+
 🌐 Network Infrastructure Engineering & Upgrade
 
 Led the support, configuration, and optimisation of enterprise network infrastructure across multi-site environments, ensuring high availability, performance, and secure connectivity.
@@ -114,6 +120,7 @@ Improved overall network resilience and uptime across distributed environments
 Enhanced voice and communication system stability across enterprise sites
 Reduced recurring latency and connectivity issues through infrastructure optimisation
 Strengthened network architecture to support long-term organisational scalability
+
 💾 Backup & Disaster Recovery (Veeam, NAS & DR Architecture)
 
 Designed, implemented, and maintained enterprise backup and disaster recovery (DR) solutions across critical infrastructure environments, ensuring data integrity, system recoverability, and business continuity.
@@ -128,6 +135,7 @@ Established structured backup schedules, retention policies, and job monitoring 
 Improved disaster recovery readiness through controlled restore testing and validation procedures
 Reduced data loss risk by ensuring consistent, verified backup integrity across infrastructure environments
 Enhanced recovery time objectives (RTO) and recovery point objectives (RPO) through optimised backup design
+
 🖥️ Server Migration, Infrastructure Modernisation & Azure Integration
 
 Managed migration of legacy Windows Server environments (2008/2012) to modern Windows Server 2022 infrastructure, including hybrid expansion into Microsoft Azure-based environments where required.
@@ -142,6 +150,7 @@ Supported Active Directory domain controller lifecycle operations, including rep
 Improved security posture by decommissioning unsupported legacy systems and aligning infrastructure to modern Microsoft standards
 Enhanced system performance, availability, and maintainability across hybrid infrastructure stacks
 Supported integration between on-prem Active Directory and Azure (Entra ID) for identity and authentication services
+
 🏗️ Infrastructure Environment Overview
 
 Typical environments include:
@@ -152,6 +161,7 @@ Google Workspace cloud environments supporting email, collaboration, and identit
 Centralised identity and policy management through Group Policy Objects (GPO)
 Multi-site networking environments with structured routing and switching architecture
 Endpoint management and large-scale migration tooling across distributed workforces
+
 🎯 Professional Focus Areas
 Infrastructure stability, uptime engineering, and operational resilience
 Identity and access governance in hybrid environments
