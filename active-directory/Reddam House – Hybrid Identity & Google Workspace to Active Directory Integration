@@ -1,0 +1,83 @@
+1. Problem Statement
+
+Reddam House operated using Google Workspace (paid environment) for email and collaboration, while internal IT systems required Active Directory (on-prem) for device management, security policies, and access control.
+
+This created:
+
+1. Split identity systems (Google vs AD)
+No single source of truth for ~200 users
+Manual onboarding across platforms
+Inconsistent access control policies
+
+2. Environment
+Google Workspace (Paid subscription)
+Windows Server Active Directory (On-Prem)
+Windows 10 endpoints
+Mixed cloud + local infrastructure
+Staff + student accounts
+
+3. Architecture Overview
+Google Workspace = Email, Docs, Collaboration
+Active Directory = Device control, authentication, policies
+No native integration initially
+
+Goal:
+
+Align Google identities with AD-managed devices and security policies
+
+4. Implementation Process
+Step 1: Audit Existing Google Workspace Users
+Export all users from Google Admin Console
+Identify duplicates, inactive accounts, and role groups
+Step 2: Active Directory Structure Design
+Created OU structure:
+Staff
+Students
+Admin
+IT Devices
+Step 3: Identity Mapping
+Matched Google Workspace users → AD users
+Standardized naming conventions:
+firstname.lastname format
+Step 4: Device Integration
+Joined Windows devices to Active Directory domain
+Applied Group Policies:
+Password rules
+Desktop restrictions
+Drive mappings
+Step 5: Hybrid Workflow Setup
+Google Workspace remained primary for email
+AD used for:
+Login authentication (PC access)
+Security enforcement
+Device control
+Step 6: Migration Cleanup
+Removed unused Google accounts
+Disabled inactive AD accounts
+Resolved permission conflicts
+
+5. Pros
+✔ No disruption to Google Workspace email system
+✔ Centralized device control via Active Directory
+✔ Improved security enforcement on endpoints
+✔ Easier IT support for desktop environments
+✔ Maintained cloud collaboration tools
+
+6. Cons
+❌ Two identity systems still exist (Google + AD)
+❌ Syncing users manually introduces human error risk
+❌ Increased administrative overhead
+❌ No full Single Sign-On (SSO) without additional tools
+
+7. Cost Considerations
+Google Workspace (Paid)
+Per-user licensing cost
+Monthly subscription per account
+Scales with staff/student count
+Active Directory (On-Prem)
+Windows Server licensing
+Hardware/server maintenance
+IT support overhead
+Overall Cost Insight:
+
+Dual-system environments increase operational cost but improve flexibility in education environments.
