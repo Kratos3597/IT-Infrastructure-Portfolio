@@ -77,7 +77,8 @@ Migrated Windows Server 2008/2012 environments to Windows Server 2022, ensuring 
 
 ## 📫 Contact
 
-- LinkedIn: https://www.linkedin.com/in/mohammed-sheik-23158b13a  
+- LinkedIn: https://www.linkedin.com/in/mohammed-sheik-23158b13a
+- Email: sheikwin10@outlook.com | sheikwin10@gmail.com
 - Location: South Africa  
 
 ---
