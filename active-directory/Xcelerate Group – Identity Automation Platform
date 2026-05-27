@@ -1,0 +1,272 @@
+# 🏢 Xcelerate Group – Identity Automation Platform  
+## Enterprise Identity Lifecycle Automation (Active Directory + Microsoft 365)
+
+---
+
+# 🧠 Overview
+
+Xcelerate Group required a modernised **Identity and Access Management (IAM) system** to replace a manual, inconsistent onboarding/offboarding process.
+
+The solution implemented an **automated identity lifecycle platform** integrating:
+
+- Microsoft Forms (Request Intake)
+- Power Automate (Workflow Engine)
+- Active Directory (Identity Source of Truth)
+- Microsoft 365 (Email & Collaboration)
+- Excel / SharePoint (Audit & Tracking)
+
+---
+
+# 🚨 1. Problem Statement
+
+The organisation had a fully manual identity management process leading to:
+
+- Manual onboarding/offboarding via email and spreadsheets  
+- No central identity workflow system  
+- Delayed account provisioning (24–72 hours)  
+- No approval governance for identity requests  
+- Inconsistent Active Directory user creation  
+- No audit trail for identity changes  
+- High IT workload due to repetitive tasks  
+- No integration between Active Directory and Microsoft 365 lifecycle  
+
+---
+
+# ⚠️ Critical Security Issue Identified
+
+A major security flaw was discovered:
+
+> Standard users were incorrectly assigned the same access permissions as managers.
+
+### Impact:
+- Broken Role-Based Access Control (RBAC)
+- Over-privileged user accounts
+- No separation of duties (SoD)
+- Exposure of sensitive departmental data
+- Violated least privilege security principle
+
+---
+
+# 🔐 Security Fix Implemented
+
+### RBAC Model Redesign:
+- Separated security groups:
+  - Standard Users
+  - Managers
+  - Admins
+  - Finance (Restricted)
+
+### Enforcement:
+- NTFS permissions corrected on shared drives
+- AD security groups restructured
+- Automated role assignment via onboarding workflow
+
+### Outcome:
+- Least privilege model enforced
+- Reduced privilege escalation risk
+- Improved compliance posture
+
+---
+
+# 🏢 2. Environment
+
+- On-Prem Active Directory (Windows Server 2016/2019)
+- Microsoft 365 (Exchange, Teams, SharePoint)
+- Microsoft Forms (User Requests)
+- Power Automate (Workflow Engine)
+- Excel / SharePoint (Audit Tracking)
+- Windows 10/11 endpoints
+
+---
+
+# 🏗️ 3. Architecture Overview
+
+The system follows a full **identity lifecycle automation model**:
+
+- Forms → Request Intake  
+- Power Automate → Validation & Approval  
+- Active Directory → Identity Creation  
+- Microsoft 365 → License & Mailbox Provisioning  
+- GPO → Device & Security Enforcement  
+- SharePoint/Excel → Audit Logging  
+
+---
+
+# ⚙️ 4. Implementation Process
+
+## Step 1: User Request Intake
+- Microsoft Forms used for onboarding/offboarding requests
+- Required fields enforced (name, department, role)
+
+---
+
+## Step 2: Validation & Approval Flow
+- Power Automate validates request completeness
+- Manager approval required before processing
+
+---
+
+## Step 3: Identity Processing Engine
+- Standardised usernames (firstname.lastname)
+- Duplicate account detection
+- Data cleanup before provisioning
+
+---
+
+## Step 4: Active Directory Provisioning
+- Automated user creation in AD
+- OU placement based on role:
+  - Staff
+  - IT
+  - Contractors
+  - Finance
+
+---
+
+## Step 5: Security Group Assignment (RBAC)
+- Users assigned to correct security groups:
+  - Standard Users
+  - Managers
+  - Admins
+
+---
+
+## Step 6: Microsoft 365 Integration
+- Automatic:
+  - Mailbox creation
+  - Teams access
+  - SharePoint permissions
+
+---
+
+## Step 7: Device & Policy Enforcement
+- Domain join automation
+- Group Policy applied:
+  - Password policies
+  - Desktop restrictions
+  - Drive mappings
+
+---
+
+## Step 8: Audit & Tracking
+- All actions logged into Excel / SharePoint
+- Full identity lifecycle traceability
+
+---
+
+## Step 9: Offboarding Automation
+- Disable AD account
+- Revoke Microsoft 365 access
+- Retain logs for compliance
+
+---
+
+# 💻 5. Infrastructure & Hardware
+
+## On-Prem Systems:
+- Windows Server Domain Controller
+- File Server (Shared Resources)
+- Backup Storage (NAS / External Backup)
+
+## Client Devices:
+- Windows 10/11 domain-joined endpoints
+
+## Cloud Services:
+- Microsoft 365 (Exchange, Teams, SharePoint)
+- Power Automate (Workflow engine)
+- Microsoft Forms (User intake)
+
+---
+
+# 💰 6. Cost Analysis
+
+## Microsoft 365 (SaaS)
+- Per-user licensing model
+- Monthly subscription cost
+- Scales with organisation size
+
+---
+
+## Active Directory (On-Prem)
+- Windows Server licensing
+- Client Access Licenses (CALs)
+- Hardware maintenance costs
+
+---
+
+## Power Automate
+- Standard included or premium depending on connectors
+- Scales with workflow complexity
+
+---
+
+## Overall Cost Insight:
+Hybrid environments increase operational cost but significantly improve scalability, governance, and automation efficiency.
+
+---
+
+# 👍 7. Pros
+
+- ✔ Fully automated identity lifecycle  
+- ✔ Reduced onboarding time from days to minutes  
+- ✔ Strong RBAC enforcement after redesign  
+- ✔ Full audit trail of all identity actions  
+- ✔ Reduced manual IT workload  
+- ✔ Standardised Active Directory structure  
+- ✔ Scalable across departments  
+
+---
+
+# 👎 8. Cons
+
+- ❌ Dependency on Power Automate availability  
+- ❌ Requires Microsoft 365 licensing investment  
+- ❌ Initial setup complexity is high  
+- ❌ Requires strict governance to maintain accuracy  
+- ❌ Workflow failures can delay provisioning  
+
+---
+
+# 🔐 9. Security Improvements
+
+- Enforced **least privilege principle**
+- Corrected RBAC misconfiguration
+- Centralised identity control via AD
+- Approval-based provisioning system
+- Full audit logging enabled
+- Reduced insider risk exposure
+
+---
+
+# 📊 10. Business Impact
+
+- ⏱ Onboarding time reduced by up to 90%  
+- 📉 Significant reduction in IT workload  
+- 🔐 Improved security posture and governance  
+- 📈 Scalable identity management system  
+- 📊 Full compliance and audit readiness  
+
+---
+
+# 🧠 11. Key Lessons Learned
+
+- Identity systems must enforce **role separation from day one**
+- Automation must include **approval governance**
+- RBAC misconfiguration is a major enterprise risk
+- Logging and audit trails are essential for trust
+- Microsoft ecosystem enables strong end-to-end IAM automation
+
+---
+
+# 🏁 Final Outcome
+
+A fully automated **Identity Lifecycle Management Platform** integrating Active Directory, Microsoft 365, and Power Automate, delivering:
+
+> Secure • Scalable • Auditable • Enterprise-grade identity automation
+
+---
+
+# 📁 Repository Name
+
+```bash
+xcelerate-group-identity-lifecycle-automation-platform
