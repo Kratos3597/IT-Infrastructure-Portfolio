@@ -36,7 +36,7 @@ The monitoring environment was fully containerized using Docker and configured w
 
 ## Security & Surveillance Systems
 
-- CCTV NVR devices
+- CCTV DVR devices
 - Camera network connectivity
 - Surveillance infrastructure uptime
 - Security network availability
