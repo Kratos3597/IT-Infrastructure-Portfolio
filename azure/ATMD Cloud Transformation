@@ -1,0 +1,198 @@
+# Advanced Manufacturing & Engineering Digital-First Cloud Infrastructure Transformation (ATMD)
+
+## Project Overview
+
+ATMD was a newly established legal and engineering-focused organization requiring a complete cloud-native Microsoft infrastructure deployment from scratch. The organization consisted of **6 core users (attorneys and operational staff)** who primarily worked remotely, with minimal need for physical office infrastructure.
+
+Due to the highly mobile nature of legal work, the decision was made to implement a **fully Azure-based, cloud-first Microsoft ecosystem**, eliminating traditional on-premises infrastructure entirely.
+
+The project delivered a secure, scalable Microsoft 365 and Azure-based environment built around identity security, endpoint governance, and secure collaboration.
+
+---
+
+# Core Environment Scope
+
+## User Base
+
+- Total Users: **6**
+- Roles:
+  - Attorneys (Remote-first legal practitioners)
+  - Administrative / Operations Staff
+  - Managing Partner / Executive Role
+- Usage Model:
+  - 90–100% remote access
+  - Multi-device access (laptops + mobile)
+  - High sensitivity legal document handling
+
+---
+
+# Project Objectives
+
+## Identity & Security
+
+- Deploy cloud-only Microsoft Entra ID
+- Enforce MFA across all 6 users
+- Implement Zero Trust access model
+- Secure legal identity and document access
+
+## Endpoint Management
+
+- Intune-based device management for all 6 endpoints
+- Windows Autopilot for zero-touch provisioning
+- Device compliance enforcement
+
+## Collaboration & Productivity
+
+- SharePoint Online for legal case collaboration
+- Secure document storage with version control
+- Controlled external sharing for clients
+
+## Security Governance
+
+- Conditional Access policies
+- RBAC-based administrative control
+- Microsoft Defender for Endpoint integration
+
+---
+
+# Phase 1 — Azure Tenant Deployment
+
+## Microsoft 365 Tenant Setup
+
+- New Microsoft 365 tenant created for ATMD
+- Domain configuration completed
+- Exchange Online enabled
+- Licensing assigned for **6 Microsoft 365 users**
+- DNS and identity federation configured
+
+---
+
+# Phase 2 — Entra ID Architecture
+
+## Identity Design
+
+- Cloud-only Microsoft Entra ID (no on-prem AD)
+- Password Hash Sync not required (cloud-native model)
+- MFA enforced for all **6 users**
+- Self-Service Password Reset enabled
+- Conditional Access baseline applied
+
+---
+
+# Phase 3 — Security Baseline
+
+## Conditional Access Policies
+
+- MFA required for all sign-ins (100% coverage)
+- Block legacy authentication
+- Restrict access to compliant devices only
+- Risk-based sign-in protection enabled
+
+---
+
+# Phase 4 — Intune Device Management
+
+## Endpoint Scope
+
+- Total managed devices: **6 corporate endpoints**
+- Each user assigned a dedicated managed device
+
+## Policies Applied
+
+- BitLocker encryption enforced
+- Microsoft Defender for Endpoint enabled
+- USB storage restrictions applied
+- Application control policies enforced
+- Compliance monitoring enabled per device
+
+---
+
+# Phase 5 — SharePoint Collaboration
+
+## Structure
+
+Designed specifically for a **6-user legal team environment**:
+
+- Legal Case Library (primary working space)
+- Client Matter Folders (restricted access per case)
+- Executive Document Library
+- IT Administration Repository
+
+## Security Controls
+
+- Restricted external sharing
+- Sensitivity labels applied to legal documents
+- Version control enforced
+- Audit logging enabled for all 6 users
+
+---
+
+# Phase 6 — RBAC Model
+
+## Administrative Roles
+
+With only 6 users, RBAC was intentionally simplified:
+
+- 1 × Global Administrator (Senior IT Engineer role)
+- 1 × Security Administrator
+- Remaining users: Standard legal and operational roles
+
+Principle of least privilege strictly enforced.
+
+---
+
+# Phase 7 — Security Hardening
+
+## Identity Protection
+
+- MFA enforced for all users
+- Sign-in risk detection enabled
+- Impossible travel detection active
+- Session timeout policies enforced
+
+## Endpoint Protection
+
+- Defender for Endpoint deployed to all 6 devices
+- Real-time threat monitoring enabled
+- Compliance scoring implemented
+
+---
+
+# Deployment Process Summary
+
+1. Microsoft 365 tenant created for **6-user organization**
+2. Entra ID configured (cloud-only model)
+3. MFA enforced for all users
+4. Intune enrolled all 6 endpoints
+5. SharePoint collaboration environment deployed
+6. Conditional Access policies applied
+7. Security hardening completed
+
+---
+
+# Final Outcomes
+
+## Security
+
+- Full Zero Trust implementation for all 6 users
+- Strong identity protection across all accounts
+- Secure legal document handling environment
+
+## Operational
+
+- Fully cloud-based legal workspace
+- Zero infrastructure overhead
+- Rapid onboarding and device provisioning
+
+## Business
+
+- Highly secure boutique legal cloud environment
+- Fully remote operational capability
+- Scalable architecture for future expansion
+
+---
+
+# Key Engineering Insight
+
+Despite the small size (**6 users total**), the architecture was designed using **enterprise-grade Microsoft security and identity principles**, ensuring scalability without redesign when the organization grows.
+
