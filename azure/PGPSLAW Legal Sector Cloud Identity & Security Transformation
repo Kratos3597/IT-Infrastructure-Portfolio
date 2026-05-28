@@ -1,0 +1,584 @@
+Enterprise Azure AD / Entra ID Migration Projects
+## Senior Infrastructure & Cloud Engineering Portfolio
+
+---
+
+# Project 1 — PGPSLAW
+# Legal Sector Cloud Identity & Security Transformation
+
+## Project Overview
+PGPSLAW required a complete modernization of their identity infrastructure, endpoint management, security posture, and collaboration environment. The organization operated with legacy on-premises Active Directory infrastructure, inconsistent user access management, decentralized file storage, and minimal device compliance enforcement.
+
+The objective was to migrate the organization into a modern Microsoft cloud-first architecture using:
+
+- Microsoft Entra ID (Azure AD)
+- Microsoft Intune
+- Conditional Access
+- SharePoint Online
+- RBAC Security Architecture
+- Microsoft Defender Integration
+- Hybrid Identity Synchronization
+- MFA Enforcement
+- Zero Trust Security Principles
+
+This project focused heavily on legal-sector compliance, document confidentiality, secure remote work enablement, and least-privilege administrative design.
+
+---
+
+# Existing Environment Assessment
+
+## Legacy Infrastructure
+
+### Identity Environment
+- Windows Server 2012 R2 Domain Controllers
+- Single Forest / Single Domain Architecture
+- Manual User Provisioning
+- Shared Administrative Accounts
+- Weak Password Policies
+- No MFA
+- Flat Security Group Structure
+- Legacy NTFS Permission Sprawl
+
+### Endpoint Environment
+- Windows 10 Mixed Builds
+- Non-Standardized Device Policies
+- Local Administrator Access Enabled
+- No Endpoint Compliance Visibility
+- No Mobile Device Management
+- No BitLocker Enforcement
+
+### Collaboration Environment
+- File Server-Based Shared Drives
+- Excessive Permission Inheritance
+- Shadow IT Cloud Storage Usage
+- No Document Versioning
+- Limited Remote Accessibility
+- VPN Dependency for Internal Resources
+
+### Security Risks Identified
+- Excessive Global Administrator Permissions
+- Lack of Conditional Access Controls
+- Credential Exposure Risk
+- No Session Risk Monitoring
+- Weak Device Compliance Visibility
+- No Identity Governance Processes
+- Shared Password Practices
+- No Device Encryption Enforcement
+
+---
+
+# Project Objectives
+
+## Primary Goals
+
+### Identity Modernization
+- Migrate users to Microsoft Entra ID
+- Implement Hybrid Identity
+- Standardize identity lifecycle management
+- Eliminate legacy authentication dependency
+
+### Security Hardening
+- Implement Conditional Access Policies
+- Enforce MFA organization-wide
+- Reduce attack surface
+- Implement Zero Trust access model
+- Enforce compliant device access
+
+### Endpoint Management
+- Deploy Microsoft Intune
+- Standardize endpoint compliance
+- Enable centralized policy management
+- Automate device onboarding
+
+### Collaboration Modernization
+- Migrate file shares to SharePoint Online
+- Implement secure document collaboration
+- Enable versioning and retention
+- Remove VPN dependency
+
+### Administrative Governance
+- Implement RBAC
+- Separate privileged accounts
+- Minimize Global Administrator usage
+- Introduce Privileged Identity Management concepts
+
+---
+
+# Phase 1 — Discovery & Assessment
+
+## Infrastructure Discovery
+
+### Actions Performed
+1. Active Directory Health Assessment
+2. DNS Validation
+3. FSMO Role Verification
+4. Replication Health Checks
+5. UPN Standardization Review
+6. Legacy Group Policy Analysis
+7. User and Group Cleanup
+8. Dormant Account Identification
+9. Device Inventory Collection
+10. Application Authentication Mapping
+
+### Tools Utilized
+- PowerShell
+- Azure AD Connect Assessment
+- Microsoft Entra Connect
+- Group Policy Management Console
+- RSOP Reporting
+- Event Viewer Analysis
+- AD Replication Tools
+- Microsoft Secure Score
+
+### Deliverables
+- Identity Risk Report
+- Device Compliance Report
+- Access Control Matrix
+- Legacy Authentication Report
+- Migration Readiness Assessment
+- Licensing Recommendation Matrix
+
+---
+
+# Phase 2 — Identity Architecture Design
+
+## Target Architecture
+
+### Core Components
+- Microsoft Entra ID Tenant
+- Hybrid Identity Synchronization
+- Password Hash Synchronization
+- Conditional Access
+- Microsoft Intune
+- SharePoint Online
+- Exchange Online Integration
+- Microsoft Defender for Endpoint
+
+### Authentication Model
+- MFA Required for All Users
+- Passwordless Pilot Deployment
+- Risk-Based Authentication
+- Device-Based Access Policies
+- Geo-Location Restrictions
+- Legacy Authentication Blocking
+
+### RBAC Administrative Structure
+
+#### Tier 0 — Privileged Identity
+- Global Administrator
+- Privileged Role Administrator
+- Conditional Access Administrator
+
+#### Tier 1 — Infrastructure Operations
+- Intune Administrator
+- Exchange Administrator
+- SharePoint Administrator
+
+#### Tier 2 — Service Desk
+- Password Administrator
+- Helpdesk Administrator
+- User Administrator
+
+### Security Separation Principles
+- Dedicated Admin Accounts
+- MFA-Enforced Administrative Access
+- No Shared Administrative Credentials
+- Least Privilege Enforcement
+- Segregated Administrative Workstations
+
+---
+
+# Phase 3 — Microsoft Entra ID Migration
+
+## Exact Migration Process
+
+### Step 1 — Tenant Preparation
+
+#### Tasks Completed
+- Verified Primary Domains
+- Configured DNS Records
+- Enabled Security Defaults (temporary)
+- Configured Initial Global Admins
+- Enabled Audit Logging
+- Configured Licensing
+- Created Administrative Break-Glass Accounts
+
+#### Security Considerations
+- Emergency access accounts excluded from Conditional Access
+- Monitoring enabled on privileged roles
+- Password vault integration implemented
+
+---
+
+### Step 2 — Azure AD Connect Deployment
+
+#### Tasks Completed
+1. Installed Azure AD Connect
+2. Configured Password Hash Synchronization
+3. Enabled Seamless SSO
+4. Scoped OU Synchronization
+5. Filtered Legacy Accounts
+6. Tested Pilot Synchronization
+7. Enabled Staging Mode Validation
+8. Enabled Production Synchronization
+
+#### Validation Performed
+- UPN Matching Validation
+- Immutable ID Verification
+- Group Membership Synchronization
+- Password Synchronization Testing
+- SSO Validation
+
+#### Risks Managed
+- Duplicate Attribute Conflicts
+- SMTP Address Conflicts
+- Invalid UPN Structures
+- Legacy Domain Dependencies
+
+---
+
+### Step 3 — Identity Cleanup
+
+#### Actions Performed
+- Removed stale user accounts
+- Disabled dormant service accounts
+- Standardized naming conventions
+- Corrected invalid email attributes
+- Reduced nested security groups
+- Removed unauthorized admin memberships
+- Documented privileged access pathways
+
+---
+
+# Phase 4 — Conditional Access Deployment
+
+## Conditional Access Architecture
+
+### Policies Implemented
+
+#### Policy 1 — Require MFA for All Users
+- Target: All Users
+- Exclusions: Emergency Access Accounts
+- Controls: MFA Required
+- Session Controls Enabled
+
+#### Policy 2 — Block Legacy Authentication
+- POP3 Blocked
+- IMAP Blocked
+- SMTP Legacy Authentication Restricted
+- Basic Authentication Disabled
+
+#### Policy 3 — Require Compliant Devices
+- Corporate Apps Restricted
+- Intune Compliance Required
+- Managed Device Requirement
+
+#### Policy 4 — Geographic Restrictions
+- Restricted High-Risk Countries
+- Impossible Travel Detection
+- Risk-Based Sign-In Analysis
+
+#### Policy 5 — Admin Protection
+- Dedicated Admin MFA
+- Session Timeout Reduction
+- Privileged Sign-In Monitoring
+- High-Risk Sign-In Blocking
+
+---
+
+# Phase 5 — Microsoft Intune Deployment
+
+## Intune Architecture
+
+### Device Enrollment Strategy
+- Azure AD Joined Devices
+- Hybrid Azure AD Join for Transitional Systems
+- Autopilot Readiness
+- Mobile Device Enrollment
+
+### Compliance Policies
+
+#### Windows Compliance
+- BitLocker Mandatory
+- TPM Required
+- Antivirus Required
+- Firewall Enabled
+- Minimum OS Version Enforced
+- Secure Boot Validation
+
+#### Mobile Compliance
+- PIN Enforcement
+- Encryption Enforcement
+- Root/Jailbreak Detection
+- App Protection Policies
+
+### Configuration Profiles
+
+#### Security Baselines
+- Microsoft Security Baselines
+- Defender Policies
+- Attack Surface Reduction Rules
+- USB Restrictions
+- Browser Hardening
+
+#### Endpoint Standardization
+- Desktop Shortcuts
+- Printer Deployment
+- WiFi Profiles
+- VPN Profiles
+- OneDrive Configuration
+
+### Application Deployment
+- Microsoft 365 Apps
+- Adobe Acrobat
+- Legal Practice Software
+- Teams Deployment
+- Defender Agent Deployment
+
+---
+
+# Phase 6 — SharePoint Online Migration
+
+## Migration Strategy
+
+### Existing Challenges
+- Permission Sprawl
+- Duplicate Data
+- Excessive Folder Nesting
+- No Version Control
+- Inconsistent Access Controls
+
+### Migration Process
+
+#### Step 1 — Data Assessment
+- File Classification
+- Permission Analysis
+- Duplicate Data Review
+- Inactive Data Identification
+
+#### Step 2 — Information Architecture
+- Departmental Sites
+- Legal Case Libraries
+- Matter-Based Permissions
+- Secure Client Collaboration Areas
+
+#### Step 3 — Permission Redesign
+- Security Group Mapping
+- RBAC Alignment
+- Least Privilege Enforcement
+- External Sharing Restrictions
+
+#### Step 4 — Migration Execution
+- Pilot Migration
+- Incremental Sync
+- Final Delta Migration
+- User Acceptance Testing
+- Production Cutover
+
+### SharePoint Security Features
+- Versioning Enabled
+- Retention Policies Configured
+- Sensitivity Labels Applied
+- DLP Policies Configured
+- Audit Logging Enabled
+
+---
+
+# Phase 7 — RBAC Security Model
+
+## Role-Based Access Control Structure
+
+### Executive Team
+- Read-only executive dashboards
+- Limited HR visibility
+- MFA enforced
+
+### Legal Department
+- Matter-specific access
+- Restricted client data segregation
+- SharePoint site isolation
+
+### Finance Team
+- Financial system access only
+- Conditional Access enforcement
+- Device compliance mandatory
+
+### IT Operations
+- Scoped administrative permissions
+- Separate admin accounts
+- JIT administrative elevation
+
+### Helpdesk Team
+- Password resets only
+- No mailbox export permissions
+- Limited Intune access
+
+---
+
+# Phase 8 — Security Hardening
+
+## Security Enhancements Implemented
+
+### Identity Protection
+- Risk-Based Sign-In Detection
+- Impossible Travel Alerts
+- Password Spray Protection
+- MFA Fraud Alerting
+
+### Endpoint Security
+- Microsoft Defender Integration
+- ASR Rules
+- Controlled Folder Access
+- Web Protection Policies
+
+### Data Protection
+- DLP Policies
+- Sensitivity Labels
+- Information Protection Policies
+- External Sharing Restrictions
+
+### Monitoring & Auditing
+- Unified Audit Logging
+- Sign-In Monitoring
+- Security Alerting
+- Administrative Action Tracking
+
+---
+
+# Migration Challenges
+
+## Challenges Encountered
+
+### Legacy Application Authentication
+Problem:
+Legacy legal software required NTLM authentication.
+
+Resolution:
+- Hybrid authentication retained temporarily
+- Application modernization roadmap developed
+- Conditional Access exclusions tightly scoped
+
+---
+
+### User Resistance to MFA
+Problem:
+Users resisted MFA enrollment.
+
+Resolution:
+- Awareness training conducted
+- Phased rollout approach used
+- Self-service enrollment guides created
+- Temporary registration campaigns implemented
+
+---
+
+### Permission Complexity
+Problem:
+Legacy file shares contained inconsistent permissions.
+
+Resolution:
+- RBAC redesign completed
+- Permission inheritance standardized
+- Departmental ownership enforced
+
+---
+
+# Final Outcomes
+
+## Security Improvements
+- 95% reduction in unauthorized admin exposure
+- 100% MFA coverage
+- Legacy authentication eliminated
+- Device compliance visibility achieved
+- Centralized endpoint management implemented
+
+## Operational Improvements
+- Reduced onboarding time
+- Simplified user provisioning
+- Improved remote work capabilities
+- Reduced VPN dependency
+- Automated policy enforcement
+
+## Business Benefits
+- Improved legal data confidentiality
+- Better compliance posture
+- Reduced ransomware exposure
+- Centralized governance
+- Improved audit readiness
+
+---
+
+# Pros and Cons
+
+## Pros
+
+### Security
+- Strong identity protection
+- Zero Trust implementation
+- Centralized policy management
+- Advanced auditing capabilities
+
+### Operational
+- Reduced administrative overhead
+- Automated device management
+- Simplified user lifecycle management
+- Improved scalability
+
+### Collaboration
+- Secure remote access
+- Better document versioning
+- Improved team collaboration
+- Reduced dependency on on-prem infrastructure
+
+---
+
+## Cons
+
+### Technical
+- Legacy application compatibility challenges
+- Initial learning curve for administrators
+- Conditional Access tuning complexity
+
+### Financial
+- Microsoft licensing costs increased
+- Intune licensing required
+- Endpoint modernization costs
+
+### Operational
+- MFA adoption resistance
+- Initial migration complexity
+- Temporary coexistence management
+
+---
+
+# Estimated Project Timeline
+
+| Phase | Duration |
+|---|---|
+| Discovery & Assessment | 1 Week |
+| Tenant Preparation | 3 Days |
+| Identity Migration | 1 Week |
+| Conditional Access Deployment | 4 Days |
+| Intune Deployment | 2 Weeks |
+| SharePoint Migration | 2 Weeks |
+| Security Hardening | 1 Week |
+| UAT & Optimization | 1 Week |
+
+Estimated Total Duration: 8–10 Weeks
+
+---
+
+# Technologies Used
+
+- Microsoft Entra ID
+- Microsoft Intune
+- Microsoft Defender
+- SharePoint Online
+- Azure AD Connect
+- PowerShell Automation
+- Conditional Access
+- Microsoft 365 Security Portal
+- Windows Autopilot
+- Exchange Online
+
+====================================================================================
