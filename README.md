@@ -86,3 +86,13 @@ Migrated Windows Server 2008/2012 environments to Windows Server 2022, ensuring 
 ## 🚀 Portfolio Summary
 
 This portfolio demonstrates real-world enterprise IT infrastructure experience across Microsoft and hybrid environments, including identity management, cloud integration, networking, and large-scale system migrations.
+
+
+⚠️ Note:
+
+The projects and architectures presented in this portfolio are based on real-world work performed across multiple roles throughout my 10+ years of experience in enterprise IT environments.
+
+All technical details, configurations, and environments have been intentionally generalized, sanitized, or modified to remove any sensitive information and to ensure the protection of company confidentiality, security, and intellectual property.
+
+Any company names, environments, or implementations are presented strictly for illustrative purposes to demonstrate technical capabilities, solution design, and operational experience.
+
