@@ -1,0 +1,353 @@
+# Xcelerate Outsourcing — Legacy Workgroup Modernization & Microsoft 365 Transformation
+
+## Project Overview
+
+Xcelerate Outsourcing was operating in a highly fragmented and legacy IT environment with no centralized Active Directory domain, no cloud collaboration platform, and no modern endpoint management. The environment consisted of approximately **40 users** distributed across operational teams, the **Jesmondene Lifestyle Estate division (100+ users)**, and a small **Xcelerate Financial Services unit (2 users)**.
+
+The organization relied heavily on outdated Windows 7 systems, unmanaged workgroup configurations, and insecure shared network drives for business-critical documentation.
+
+The objective of this project was to modernize the entire IT landscape using Microsoft 365 and Azure services, introducing identity governance, secure collaboration, and endpoint standardization.
+
+---
+
+# Existing Environment Assessment
+
+## Identity & Infrastructure
+
+- No Active Directory Domain Controller (DC)
+- All systems configured in standalone Workgroup mode
+- No centralized authentication system
+- Local user accounts across all machines
+- Inconsistent password policies
+
+## Endpoint Environment
+
+- Predominantly Windows 7 legacy systems
+- Limited hardware standardization
+- High security vulnerability exposure (end-of-life OS)
+- No endpoint management or monitoring
+
+## File & Collaboration Systems
+
+- Heavy reliance on shared network drives
+- Broken and inconsistent folder permissions
+- Frequent file duplication and version conflicts
+- No backup strategy or retention policy
+- No Microsoft Teams or SharePoint usage
+
+---
+
+# Business Units Scope
+
+## Jesmondene Lifestyle Estate (100+ Users)
+
+A large operational division requiring structured document governance and scalable collaboration tooling.
+
+### Key Challenges
+- High user volume (~100+ staff)
+- Fragmented documentation practices
+- No centralized knowledge repository
+- Heavy reliance on shared drives
+
+### Solution Delivered
+- Dedicated SharePoint Online site collection
+- Structured departmental libraries
+- Role-based access control
+- Standardized document taxonomy
+
+### Outcomes
+- Centralized documentation hub
+- Improved operational transparency
+- Reduced file duplication and data loss
+
+---
+
+## Xcelerate Financial Services (2 Users)
+
+A highly specialized micro-team handling sensitive financial and compliance-related documentation.
+
+### Key Challenges
+- Extremely small team (2 users)
+- High sensitivity financial data
+- Need for strict access control
+- No prior collaboration platform
+
+### Solution Delivered
+- Isolated SharePoint site with restricted permissions
+- Strict RBAC implementation
+- Encrypted document storage policies
+- Dedicated Teams channel for communication
+
+### Outcomes
+- Strong data confidentiality controls
+- Secure financial document handling
+- Simplified collaboration workflow
+
+---
+
+# Project Objectives
+
+## Core Goals
+
+- Introduce Microsoft Entra ID cloud identity platform
+- Eliminate reliance on Workgroup-based authentication
+- Migrate file shares to SharePoint Online
+- Implement Microsoft Teams for collaboration
+- Deploy OneDrive for automatic user backup and sync
+- Standardize endpoints using Windows 10/11
+- Establish secure RBAC and access governance
+
+---
+
+# Phase 1 — Identity & Microsoft 365 Foundation
+
+## Tenant Deployment
+
+- Microsoft 365 tenant created for Xcelerate Outsourcing
+- User accounts created for ~40 employees + business units
+- Domain configured and verified
+- Exchange Online enabled for corporate email
+
+## Entra ID Implementation
+
+- Cloud-based Microsoft Entra ID deployed
+- User lifecycle management established
+- Password policies enforced
+- MFA enabled for all users
+
+---
+
+# Phase 2 — Endpoint Modernization
+
+## Windows Migration Strategy
+
+### Legacy Replacement
+- Windows 7 systems identified and decommissioned
+- Devices upgraded to Windows 10/11 where hardware permitted
+- Non-compliant systems isolated during transition
+
+### Device Standardization
+- Baseline security configuration applied
+- Defender Antivirus enabled
+- BitLocker encryption enforced
+- Removal of local admin privileges where possible
+
+---
+
+# Phase 3 — SharePoint Online Migration
+
+## File Share Replacement
+
+### Legacy Problem
+- Shared drives with broken permissions
+- No version control
+- Frequent file overwrites and duplication
+
+### Solution
+- Migration to SharePoint Online document libraries
+- Department-based site architecture
+- Versioning enabled across all libraries
+- Sensitivity labels applied to critical data
+
+---
+
+# Phase 4 — Microsoft Teams Deployment
+
+## Collaboration Modernization
+
+- Microsoft Teams rolled out to all users across divisions
+- Department-based Teams channels created
+- Chat-based communication introduced
+- File sharing integrated with SharePoint backend
+
+## Operational Impact
+
+- Reduced dependency on email communication
+- Improved cross-team collaboration
+- Real-time document co-authoring enabled
+
+---
+
+# Phase 5 — OneDrive for Business Implementation
+
+## User-Level Data Protection
+
+- OneDrive deployed to all users
+- Automatic desktop, documents, and pictures backup enabled
+- Seamless sync across devices implemented
+- Version recovery enabled for user files
+
+## Benefits
+
+- Eliminated local-only file storage risks
+- Improved disaster recovery capability
+- Enabled secure remote access to user data
+
+---
+
+# Phase 6 — Security Hardening
+
+## Identity Security
+
+- MFA enforced for all accounts
+- Legacy authentication blocked
+- Risk-based sign-in policies applied
+
+## Endpoint Security
+
+- Microsoft Defender enabled across endpoints
+- Device compliance policies enforced
+- USB and external storage restrictions applied
+
+## Data Protection
+
+- SharePoint and OneDrive DLP policies implemented
+- External sharing restrictions enforced
+- Audit logging enabled
+
+---
+
+# Phase 7 — Migration Execution Strategy
+
+## Phased Approach
+
+1. User onboarding into Microsoft 365 tenant
+2. Pilot migration group selected
+3. Share drive data migration to SharePoint
+4. Full OneDrive sync rollout
+5. Teams deployment across organization
+6. Legacy system decommissioning
+
+---
+
+# Challenges Encountered
+
+## Legacy Windows 7 Environment
+Problem:
+High number of unsupported systems created security and compatibility issues.
+
+Resolution:
+- Phased OS upgrade strategy
+- Hardware assessment and replacement planning
+- Temporary isolation of high-risk devices
+
+---
+
+## Broken File Share Architecture
+Problem:
+Severe inconsistency in shared drive permissions and structure.
+
+Resolution:
+- Full SharePoint restructuring
+- Data cleanup and duplication removal
+- Standardized folder taxonomy introduced
+
+---
+
+# Final Outcomes
+
+## Security Improvements
+- Removal of Windows 7 from production environment
+- Centralized identity via Microsoft Entra ID
+- Improved auditability and compliance tracking
+
+## Operational Improvements
+- Fully centralized collaboration via Teams and SharePoint
+- Automated file backup using OneDrive
+- Reduced dependency on local file servers
+
+## Business Improvements
+- Stronger collaboration between departments
+- Improved document governance
+- Increased operational efficiency
+
+---
+
+# Pros and Cons
+
+## Pros
+
+### Technical
+- Modern cloud-based infrastructure
+- Centralized identity and access control
+- Improved endpoint security posture
+
+### Operational
+- Enhanced collaboration via Teams
+- Reliable document versioning
+- Reduced IT overhead
+
+### Business
+- Improved productivity
+- Better data protection
+- Scalable cloud environment
+
+---
+
+## Cons
+
+### Technical
+- Major uplift required from Windows 7 legacy systems
+- Data migration complexity
+- Network bandwidth considerations during migration
+
+### Operational
+- User training required for Teams and SharePoint adoption
+- Change resistance from legacy workflows
+
+---
+
+# Estimated Timeline
+
+| Phase | Duration |
+|---|---|
+| Assessment & Planning | 1–2 Weeks |
+| Microsoft 365 Tenant Setup | 1 Week |
+| Identity & Security Deployment | 1 Week |
+| Endpoint Modernization | 2–4 Weeks |
+| SharePoint Migration | 2–3 Weeks |
+| Teams & OneDrive Rollout | 1–2 Weeks |
+| Optimization & UAT | 1 Week |
+
+Estimated Total Duration: 8–12 Weeks
+
+---
+
+# Technologies Used
+
+- Microsoft Entra ID
+- Microsoft 365
+- Microsoft Teams
+- SharePoint Online
+- OneDrive for Business
+- Microsoft Defender for Endpoint
+- Windows 10/11 Upgrade Path
+- Conditional Access
+- PowerShell Automation
+
+---
+
+# Key Engineering Deliverables
+
+- Microsoft 365 Tenant Architecture Design
+- SharePoint Information Architecture
+- Teams Collaboration Structure
+- Identity & RBAC Governance Model
+- Endpoint Modernization Strategy
+- Migration Runbooks
+- Security Baseline Documentation
+- User Training & Adoption Guides
+
+---
+
+# Key Engineering Skills Demonstrated
+
+- Legacy Workgroup-to-Cloud Migration
+- Microsoft 365 Enterprise Deployment
+- Identity and Access Management
+- Endpoint Modernization Strategy
+- SharePoint Architecture Design
+- Teams Collaboration Engineering
+- Data Migration Planning
+- Security Hardening and Compliance Implementation
+- Large-Scale User Adoption Strategy (40 users)
